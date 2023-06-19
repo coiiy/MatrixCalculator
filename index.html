@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Gaussian Elimination Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    footer {
+      text-align: center; 
+      background-color: #635555;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Gaussian Elimination!</h1>
+    <div class="input-container">
+      <label for="matrix">Matrix:</label>
+      <textarea id="matrix" rows="4" cols="10"></textarea>
+    </div>
+    <div class="button-container">
+      <button onclick="solveSystem()">Solve Linear System</button>
+      <button onclick="findInverse()">Find Inverse</button>
+    </div>
+    <div id="result"></div>
+
+    <div class="video-container">
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/eDb6iugi6Uk" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>Watch on <a href="https://www.youtube.com/watch?v=eDb6iugi6Uk" target="_blank">YouTube</a></p>
+    <footer>
+      <p>&copy;2023 Harraz Irfan.All rights reserved.</p>
+    </footer>
+  </div>
+  <audio id="sound-effect">
+    <source src="JOTARO VS DIO [SOUND EFFECT HD] (mp3cut.net).mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
+
